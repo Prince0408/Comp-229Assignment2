@@ -1,0 +1,100 @@
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body style="color: #FFFFFF; background-color: #000000;">
+<meta content="en-ca" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Membership Form</title>
+    <style type="text/css">
+        #allpage {
+            background-color: black;
+        }
+
+        form {
+            font-family: "Times New Roman", Times, serif;                        
+            background-color: black;
+            border-style: double;
+            border-color:#FFFF66;
+            border-width: thin;
+            right: auto;
+            left: auto;
+            clip: rect(auto, auto, auto, auto);
+            margin: auto;
+            width: 980px;
+            text-align: left;
+            top: auto;
+            bottom: auto;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+    .auto-style1 {
+	color: #000000;
+}
+    .auto-style2 {
+	color: #FFFFFF;
+}
+    </style>
+    <div id="allpage">
+       <form novalidate="novalidate">
+                <fieldset id="delivery">
+                    <legend><h1>Contact</h1></legend>
+                    <h3>My Information</h3>
+                    <p>Gmail: p319@my.centennialcollege.ca</p>
+                    <p>Contact No.: 123-333(4444)</p>
+                    <p></p>
+                    <label for="nameinput">FirstName</label>
+                    <input type="text" id="fnameinput" name="name" required="required" style="width: 200px" size="30" placeholder="First Name " />
+                    <label for="nameinput">LastName</label>
+                    <input type="text" id="lnameinput" name="name" required="required" style="width: 150px" size="30" placeholder="Last Name" />
+                    <br>
+                    <br>
+                    <label for="addrinput">Email Address:</label>
+                    <input type="text" id="addrinput" name="address" required="required" style="width: 600px" size="50" placeholder="XXXXXXXX" />
+					<br><br>Message:
+					<input name="Text1" size="499" style="width: 624px; height: 62px" type="text"><br><br>
+                    <label for="cityinput">City:</label>
+                    <input type="text" id="cityinput" name="city" required="required" style="width: 176px" size="20" placeholder="XXXXXXX" />
+                    <label for="provinceinput">&nbsp;&nbsp; Province:</label>
+
+                    <select id="province" name="province" required="required">
+                        <option value="on">ON</option>
+                        <option value="qc">QC</option>
+                        <option value="mn">MN</option>
+
+                    </select>
+                    <br>
+                    <br><br>
+                    <div id="error-age"></div>
+                </fieldset>
+                <br>
+                <br>
+                &nbsp;<input type="button" id="previewBtn" value="Register" style="width: 20%; height: 41px" /><P id="bb">
+                    &nbsp;
+                    <input name="Reset1" type="reset" value="Restart" class="auto-style1" style="width: 19%; height: 41px"></P>
+				<P>
+                    </P>
+            </form>    </div>
+    <script src ="a4 - Copy.js"> </script>
+</body>
+
+</html>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
